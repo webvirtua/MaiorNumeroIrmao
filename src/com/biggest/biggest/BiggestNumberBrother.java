@@ -7,20 +7,12 @@ import javax.swing.JOptionPane;
 /**
  * <b>AbstractServiceGeneral</b>
  * @package com.biggest.biggest
- * @autor Luiz Rodrigues <atende@webvirtua.com.br>
- * @copyrigth © 09/2020, Luiz Rodrigues Web Virtua
+ * @author Luiz Rodrigues
+ * @copyrigth © 09/2020
  * @version 1.0
  */
 public class BiggestNumberBrother {
 	private int number = 0;
-	
-	/**
-     * BiggestNumberBrother constructor.
-     */
-	public BiggestNumberBrother() {
-		super();
-		this.uiBiggestNumberBrother();
-	}
 
 	/** 
 	 * Método cria a interface gráfica do usuário e valida o tipo de dado recebido no input.
@@ -44,6 +36,11 @@ public class BiggestNumberBrother {
 		    }
 		    
 		    int result = this.biggestNumberBrother(this.number);
+		    
+		    if (result == 0) {
+		    	JOptionPane.showMessageDialog(null, "O número retornado não corresponde a um número inteiro positivo! Erro: ", "Mensagem de erro", JOptionPane.INFORMATION_MESSAGE);
+		    	return 0;
+		    }
 		    
 		    if (result == -1) {
 		    	JOptionPane.showMessageDialog(null, "O resultado do maior número irmão não pode ser superior a 100.000.000!", "Mensagem", JOptionPane.INFORMATION_MESSAGE);
@@ -86,9 +83,7 @@ public class BiggestNumberBrother {
 			
 			return Integer.parseInt(newNumberString);
 		} catch (Exception e) {
-			JOptionPane.showMessageDialog(null, "Não foi possível executar corretamente! Erro: " + e, "Mensagem de erro", JOptionPane.INFORMATION_MESSAGE);
+			return 0;
 		}
-		
-		return 0;
 	}
 }
