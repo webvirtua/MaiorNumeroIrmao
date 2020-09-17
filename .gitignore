@@ -1,0 +1,5 @@
+# dependencies
+/.settings
+/bin
+.project
+.classpath
