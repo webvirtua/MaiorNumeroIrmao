@@ -13,11 +13,11 @@ import com.biggest.biggest.BiggestNumberBrother;
  */
 public class TestBiggestNumberBrotherTest {
 	@Test
-	public void testBiggestNumberBrother() throws Exception {
+	public void testBiggestNumberBrother() {
 		BiggestNumberBrother biggestNumber = new BiggestNumberBrother();
 		
 		/**
-		 * Testa um número dentro da faixa de 0 a 2147483647 como entrada
+		 * Testa um número dentro da faixa de 0 a 100000000 como entrada
 		 */
 		int biggestMiddle = biggestNumber.biggestNumberBrother(213);
 		assertEquals(biggestMiddle, 321);

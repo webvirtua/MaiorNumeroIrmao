@@ -5,7 +5,7 @@ import java.util.Collections;
 import javax.swing.JOptionPane;
 
 /**
- * <b>AbstractServiceGeneral</b>
+ * <b>BiggestNumberBrother</b>
  * @package com.biggest.biggest
  * @author Luiz Rodrigues
  * @copyrigth © 09/2020
@@ -16,7 +16,7 @@ public class BiggestNumberBrother {
 
 	/** 
 	 * Método cria a interface gráfica do usuário e valida o tipo de dado recebido no input.
-	 * @autor Luiz Rodrigues
+	 * @author Luiz Rodrigues
      * @return int
 	 */
 	public int uiBiggestNumberBrother() {
@@ -57,9 +57,9 @@ public class BiggestNumberBrother {
 	
 	/** 
 	 * Método recebe um valor inteiro e retorna o mair número irmão.
-	 * @autor Luiz Rodrigues
+	 * @author Luiz Rodrigues
 	 * @param number int
-     * @return int - Maior número irmão
+     * @return int
 	 */
 	public int biggestNumberBrother(int number) {
 		try {

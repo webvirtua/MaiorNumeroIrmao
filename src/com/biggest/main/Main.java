@@ -17,5 +17,4 @@ public class Main {
 		BiggestNumberBrother biggest = new BiggestNumberBrother();
 		biggest.uiBiggestNumberBrother();
 	}
-
 }
